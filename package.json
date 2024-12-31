@@ -1,0 +1,30 @@
+{
+  "name": "pjs-lite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "concurrently \"esno watch app.js\" \"cd vite-template && npm run dev\"",
+    "start": "esno app.js",
+    "build": "cd vite-template && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/rest": "^19.0.7",
+    "axios": "^1.5.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.2",
+    "memorystore": "^1.6.7",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "esno": "^0.17.0"
+  }
+}
